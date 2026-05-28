@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventivo Home - Professional Padel Classes & Training</title>
+    <meta name="description" content="Join Ventivo Home for expert padel tennis classes. Professional coaching, flexible schedules, and community-driven training programs for all skill levels. Click here to continue learning about our padel academy.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .vhm_header_wrapper_7x2k {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .vhm_nav_container_9q4r {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .vhm_logo_text_5m8n {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .vhm_nav_menu_3k7p {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .vhm_nav_link_8b2x {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: opacity 0.3s;
+            cursor: pointer;
+        }
+
+        .vhm_nav_link_8b2x:hover {
+            opacity: 0.8;
+        }
+
+        .vhm_hero_section_4t6y {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            background-image: url('https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+
+        .vhm_hero_content_2n9k {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .vhm_hero_title_6p3x {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .vhm_hero_subtitle_1q8v {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .vhm_cta_button_7h3m {
+            display: inline-block;
+            background-color: #ff6b35;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .vhm_cta_button_7h3m:hover {
+            background-color: #ff5722;
+        }
+
+        .vhm_content_section_4x2m {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .vhm_section_title_9k5l {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+
+        .vhm_grid_layout_3b7q {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .vhm_card_block_8m2k {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .vhm_card_block_8m2k:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .vhm_card_title_5n6x {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #2a5298;
+            font-weight: bold;
+        }
+
+        .vhm_card_text_2p9r {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .vhm_image_block_7q3k {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .vhm_feature_grid_1x8n {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .vhm_feature_item_4k2p {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .vhm_feature_icon_9m3x {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .vhm_feature_name_6t4x {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .vhm_review_section_2k9p {
+            background-color: #f0f4f8;
+            padding: 50px 20px;
+            margin: 60px 0;
+        }
+
+        .vhm_review_container_5x7m {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .vhm_review_grid_8n3k {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .vhm_review_card_3p8q {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .vhm_review_stars_7b2x {
+            color: #ffc107;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .vhm_review_text_4m6n {
+            color: #555;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .vhm_review_author_9k3x {
+            font-weight: bold;
+            color: #1e3c72;
+        }
+
+        .vhm_history_section_6x2n {
+            background: white;
+            padding: 50px 20px;
+            margin: 60px 0;
+        }
+
+        .vhm_history_content_4p7k {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .vhm_history_text_8q5m {
+            color: #555;
+            line-height: 1.9;
+        }
+
+        .vhm_history_title_2n4x {
+            font-size: 32px;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .vhm_history_image_5k9p {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .vhm_footer_wrapper_3m8k {
+            background-color: #1e3c72;
+            color: white;
+            padding: 50px 20px;
+            margin-top: 60px;
+        }
+
+        .vhm_footer_content_7n2x {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .vhm_footer_section_4b6x {
+            margin-bottom: 20px;
+        }
+
+        .vhm_footer_title_9p3x {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .vhm_footer_link_2k8n {
+            color: #b0c4de;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        .vhm_footer_link_2k8n:hover {
+            color: white;
+        }
+
+        .vhm_phone_link_6x3m {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .vhm_phone_link_6x3m:hover {
+            text-decoration: underline;
+        }
+
+        .vhm_modal_overlay_5t4x {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vhm_modal_overlay_5t4x.vhm_active_8k2p {
+            display: flex;
+        }
+
+        .vhm_modal_content_9m7x {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .vhm_modal_close_3n5x {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .vhm_modal_close_3n5x:hover {
+            color: #333;
+        }
+
+        .vhm_modal_title_7k4m {
+            font-size: 28px;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .vhm_modal_text_2p6n {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .vhm_modal_heading_4x8n {
+            font-size: 18px;
+            color: #2a5298;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .vhm_modal_list_6q3x {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .vhm_modal_list_6q3x li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .vhm_testimonial_section_8x2k {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 20px;
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .vhm_testimonial_content_3p9m {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .vhm_testimonial_quote_5n7x {
+            font-size: 24px;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .vhm_testimonial_author_2m4k {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .vhm_cta_section_7b3m {
+            background-color: #ff6b35;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .vhm_cta_text_4n6x {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .vhm_info_block_9k2p {
+            background: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 5px solid #2a5298;
+            border-radius: 4px;
+        }
+
+        .vhm_info_title_6m3x {
+            font-size: 20px;
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .vhm_info_text_4p8n {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .vhm_highlight_text_2k7m {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .vhm_nav_menu_3k7p {
+                gap: 15px;
+                font-size: 12px;
+            }
+
+            .vhm_hero_title_6p3x {
+                font-size: 32px;
+            }
+
+            .vhm_history_content_4p7k {
+                grid-template-columns: 1fr;
+            }
+
+            .vhm_history_image_5k9p {
+                height: 300px;
+            }
+
+            .vhm_modal_content_9m7x {
+                padding: 25px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <div class="vhm_header_wrapper_7x2k">
+        <div class="vhm_nav_container_9q4r">
+            <div class="vhm_logo_text_5m8n">VENTIVO HOME</div>
+            <div class="vhm_nav_menu_3k7p">
+                <a class="vhm_nav_link_8b2x" onclick="scrollToSection('classes')">Classes</a>
+                <a class="vhm_nav_link_8b2x" onclick="scrollToSection('coaching')">Coaching</a>
+                <a class="vhm_nav_link_8b2x" onclick="scrollToSection('facilities')">Facilities</a>
+                <a class="vhm_nav_link_8b2x" onclick="scrollToSection('events')">Events</a>
+                <a class="vhm_nav_link_8b2x" onclick="scrollToSection('about')">About Us</a>
+                <a class="vhm_nav_link_8b2x" onclick="openModal('terms')">Terms</a>
+                <a class="vhm_nav_link_8b2x" onclick="openModal('privacy')">Privacy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="vhm_hero_section_4t6y">
+        <div class="vhm_hero_content_2n9k">
+            <h1 class="vhm_hero_title_6p3x">Master the Art of Padel Tennis</h1>
+            <p class="vhm_hero_subtitle_1q8v">Professional coaching and training programs for all skill levels. Join our vibrant community of padel enthusiasts and elevate your game today. <span class="vhm_highlight_text_2k7m">Click here to continue</span> your padel journey with us.</p>
+            <button class="vhm_cta_button_7h3m" onclick="scrollToSection('classes')">Explore Our Classes</button>
+        </div>
+    </div>
+
+    <!-- Classes Section -->
+    <div class="vhm_content_section_4x2m" id="classes">
+        <h2 class="vhm_section_title_9k5l">Our Padel Training Programs</h2>
+        <div class="vhm_grid_layout_3b7q">
+            <div class="vhm_card_block_8m2k">
+                <img src="https://images.pexels.com/photos/3808517/pexels-photo-3808517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Beginner Padel Classes" class="vhm_image_block_7q3k">
+                <h3 class="vhm_card_title_5n6x">Beginner Fundamentals</h3>
+                <p class="vhm_card_text_2p9r">Start your padel adventure with our comprehensive beginner program. Learn proper grip techniques, basic positioning, and foundational strokes. Our certified instructors ensure you build a strong foundation for future advancement. Classes are structured to help you understand court dynamics and develop confidence in every shot.</p>
+                <p class="vhm_card_text_2p9r"><strong>Duration:</strong> 6-8 weeks | <strong>Frequency:</strong> 2-3 sessions per week</p>
+            </div>
+
+            <div class="vhm_card_block_8m2k">
+                <img src="https://images.pexels.com/photos/3807516/pexels-photo-3807516.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Intermediate Padel Training" class="vhm_image_block_7q3k">
+                <h3 class="vhm_card_title_5n6x">Intermediate Development</h3>
+                <p class="vhm_card_text_2p9r">Progress to the next level with advanced technique refinement and tactical awareness. This program focuses on improving your consistency, developing strategic play, and enhancing your competitive edge. You'll learn advanced positioning, net play strategies, and match tactics that separate intermediate players from beginners.</p>
+                <p class="vhm_card_text_2p9r"><strong>Duration:</strong> 8-10 weeks | <strong>Frequency:</strong> 3 sessions per week</p>
+            </div>
+
+            <div class="vhm_card_block_8m2k">
+                <img src="https://images.pexels.com/photos/3807515/pexels-photo-3807515.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Advanced Padel Coaching" class="vhm_image_block_7q3k">
+                <h3 class="vhm_card_title_5n6x">Advanced Competition</h3>
+                <p class="vhm_card_text_2p9r">Reach your peak performance with our advanced competition program. Designed for serious players aiming for tournament success, this intensive training covers advanced tactics, mental conditioning, and match preparation. Our coaches provide personalized feedback and competitive match simulations to prepare you for real tournament scenarios.</p>
+                <p class="vhm_card_text_2p9r"><strong>Duration:</strong> 10-12 weeks | <strong>Frequency:</strong> 4+ sessions per week</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="vhm_content_section_4x2m" id="coaching">
+        <h2 class="vhm_section_title_9k5l">Why Choose Ventivo Home Coaching</h2>
+        <div class="vhm_feature_grid_1x8n">
+            <div class="vhm_feature_item_4k2p">
+                <div class="vhm_feature_icon_9m3x">👨‍🏫</div>
+                <div class="vhm_feature_name_6t4x">Expert Instructors</div>
+                <p class="vhm_card_text_2p9r">Our coaches bring years of professional experience and certification in padel coaching methodologies.</p>
+            </div>
+
+            <div class="vhm_feature_item_4k2p">
+                <div class="vhm_feature_icon_9m3x">🎯</div>
+                <div class="vhm_feature_name_6t4x">Personalized Training</div>
+                <p class="vhm_card_text_2p9r">Each program is tailored to your individual goals, skill level, and learning pace for maximum results.</p>
+            </div>
+
+            <div class="vhm_feature_item_4k2p">
+                <div class="vhm_feature_icon_9m3x">🏆</div>
+                <div class="vhm_feature_name_6t4x">Tournament Preparation</div>
+                <p class="vhm_card_text_2p9r">We prepare competitive players for tournament success with match simulations and strategic coaching.</p>
+            </div>
+
+            <div class="vhm_feature_item_4k2p">
+                <div class="vhm_feature_icon_9m3x">👥</div>
+                <div class="vhm_feature_name_6t4x">Community Focus</div>
+                <p class="vhm_card_text_2p9r">Join a supportive community of padel enthusiasts who share your passion for the sport.</p>
+            </div>
+
+            <div class="vhm_feature_item_4k2p">
+                <div class="vhm_feature_icon_9m3x">📅</div>
+                <div class="vhm_feature_name_6t4x">Flexible Scheduling</div>
+                <p class="vhm_card_text_2p9r">Classes available morning, afternoon, and evening to fit your busy lifestyle.</p>
+            </div>
+
+            <div class="vhm_feature_item_4k2p">
+                <div class="vhm_feature_icon_9m3x">🎓</div>
+                <div class="vhm_feature_name_6t4x">Continuous Learning</div>
+                <p class="vhm_card_text_2p9r">Access to workshops, seminars, and advanced training sessions throughout the year.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facilities Section -->
+    <div class="vhm_content_section_4x2m" id="facilities">
+        <h2 class="vhm_section_title_9k5l">State-of-the-Art Facilities</h2>
+        <div class="vhm_grid_layout_3b7q">
+            <div class="vhm_card_block_8m2k">
+                <img src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Indoor Padel Courts" class="vhm_image_block_7q3k">
+                <h3 class="vhm_card_title_5n6x">Indoor Courts</h3>
+                <p class="vhm_card_text_2p9r">Our indoor facilities feature climate-controlled courts with professional-grade surfaces. Play comfortably year-round regardless of weather conditions. Each court is equipped with modern lighting systems ensuring optimal visibility during all training sessions and matches.</p>
+            </div>
+
+            <div class="vhm_card_block_8m2k">
+                <img src="https://images.pexels.com/photos/3945682/pexels-photo-3945682.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Training Equipment" class="vhm_image_block_7q3k">
+                <h3 class="vhm_card_title_5n6x">Training Equipment</h3>
+                <p class="vhm_card_text_2p9r">Access to premium padel rackets, balls, and training aids. We provide high-quality equipment for all training sessions. Our equipment inventory is regularly updated with the latest technology to enhance your training experience and performance development.</p>
+            </div>
+
+            <div class="vhm_card_block_8m2k">
+                <img src="https://images.pexels.com/photos/3945681/pexels-photo-3945681.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Locker Facilities" class="vhm_image_block_7q3k">
+                <h3 class="vhm_card_title_5n6x">Amenities</h3>
+                <p class="vhm_card_text_2p9r">Comfortable locker rooms with shower facilities, secure storage, and relaxation areas. Our facility includes a café serving refreshments and healthy snacks. Professional video analysis room available for technique review and performance assessment sessions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- History Section 1 -->
+    <div class="vhm_history_section_6x2n" id="about">
+        <div class="vhm_history_content_4p7k">
+            <div>
+                <h2 class="vhm_history_title_2n4x">Our Journey Begins</h2>
+                <p class="vhm_history_text_8q5m">Ventivo Home was founded in 2015 with a singular vision: to democratize padel tennis training and make it accessible to everyone. Our founders, passionate padel enthusiasts themselves, recognized a gap in the market for quality coaching and community-driven training programs. What started as a small operation with two courts has grown into a thriving padel academy serving hundreds of players annually.</p>
+                <p class="vhm_history_text_8q5m">Our commitment to excellence has remained unwavering throughout our growth. We invested heavily in facility improvements, coach training, and player development programs. Today, Ventivo Home stands as a beacon of quality padel instruction in the region, known for producing competitive players and fostering a welcoming community atmosphere.</p>
+            </div>
+            <img src="https://images.pexels.com/photos/3807514/pexels-photo-3807514.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ventivo Home History" class="vhm_history_image_5k9p">
+        </div>
+    </div>
+
+    <!-- Info Block 1 -->
+    <div class="vhm_content_section_4x2m">
+        <div class="vhm_info_block_9k2p">
+            <h3 class="vhm_info_title_6m3x">Coaching Philosophy & Methodology</h3>
+            <p class="vhm_info_text_4p8n">At Ventivo Home, we believe in a holistic approach to padel development. Our coaching philosophy emphasizes technical excellence, tactical awareness, and mental resilience. We employ evidence-based training methods combined with personalized feedback to accelerate player development. Each coach undergoes continuous professional development to stay current with the latest padel coaching techniques and sports science research. Our methodology focuses on building confidence, fostering a love for the game, and developing players who can compete at their highest potential. <span class="vhm_highlight_text_2k7m">Click here to continue</span> exploring our comprehensive training approach.</p>
+        </div>
+    </div>
+
+    <!-- Events Section -->
+    <div class="vhm_content_section_4x2m" id="events">
+        <h2 class="vhm_section_title_9k5l">Events & Tournaments</h2>
+        <div class="vhm_grid_layout_3b7q">
+            <div class="vhm_card_block_8m2k">
+                <h3 class="vhm_card_title_5n6x">Monthly Friendly Matches</h3>
+                <p class="vhm_card_text_2p9r">Join our monthly social tournaments where players of all levels compete in a fun, supportive environment. These events are designed to build community, improve competitive experience, and celebrate the sport we love. Participants receive certificates and recognition for their participation and achievements.</p>
+            </div>
+
+            <div class="vhm_card_block_8m2k">
+                <h3 class="vhm_card_title_5n6x">Seasonal Championships</h3>
+                <p class="vhm_card_text_2p9r">Our annual championship series features multiple divisions accommodating all skill levels. Competitors battle for titles, trophies, and recognition within our community. These events attract players from surrounding regions and provide excellent competitive experience for aspiring tournament players.</p>
+            </div>
+
+            <div class="vhm_card_block_8m2k">
+                <h3 class="vhm_card_title_5n6x">Training Camps & Workshops</h3>
+                <p class="vhm_card_text_2p9r">Intensive training camps led by renowned padel coaches focusing on specific skill development. Workshops cover topics from advanced tactics to mental conditioning and injury prevention. These special events provide concentrated learning opportunities and networking with serious padel players.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- History Section 2 -->
+    <div class="vhm_history_section_6x2n">
+        <div class="vhm_history_content_4p7k">
+            <img src="https://images.pexels.com/photos/3945680/pexels-photo-3945680.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ventivo Home Growth" class="vhm_history_image_5k9p">
+            <div>
+                <h2 class="vhm_history_title_2n4x">Expansion & Excellence</h2>
+                <p class="vhm_history_text_8q5m">By 2018, Ventivo Home expanded to include six professional courts and a dedicated coaching staff of twelve certified instructors. Our facility became known for hosting regional tournaments and training elite players. We established partnerships with national padel associations and began developing young talent through our youth academy program.</p>
+                <p class="vhm_history_text_8q5m">The expansion phase brought new challenges and opportunities. We invested in state-of-the-art video analysis technology, hired sports psychologists, and developed specialized training programs for competitive players. Our commitment to innovation and player development attracted attention from padel federations and media outlets, establishing Ventivo Home as a leader in padel coaching and development.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="vhm_review_section_2k9p">
+        <div class="vhm_review_container_5x7m">
+            <h2 class="vhm_section_title_9k5l" style="color: white;">What Our Players Say</h2>
+            <div class="vhm_review_grid_8n3k">
+                <div class="vhm_review_card_3p8q">
+                    <div class="vhm_review_stars_7b2x">★★★★★</div>
+                    <p class="vhm_review_text_4m6n">"Ventivo Home transformed my padel game completely. The coaches are incredibly knowledgeable and patient. Within three months, I went from struggling with basic strokes to competing in tournaments. Highly recommended!"</p>
+                    <p class="vhm_review_author_9k3x">- Maria Rodriguez</p>
+                </div>
+
+                <div class="vhm_review_card_3p8q">
+                    <div class="vhm_review_stars_7b2x">★★★★★</div>
+                    <p class="vhm_review_text_4m6n">"The facilities are top-notch and the community atmosphere is fantastic. I've made great friends here while improving my skills. The personalized coaching approach really makes a difference in your development."</p>
+                    <p class="vhm_review_author_9k3x">- Carlos Mendez</p>
+                </div>
+
+                <div class="vhm_review_card_3p8q">
+                    <div class="vhm_review_stars_7b2x">★★★★★</div>
+                    <p class="vhm_review_text_4m6n">"I started as a complete beginner and now I'm playing in competitive matches. The structured progression through their programs is excellent. Every coach genuinely cares about your improvement and success."</p>
+                    <p class="vhm_review_author_9k3x">- Sofia Hernandez</p>
+                </div>
+
+                <div class="vhm_review_card_3p8q">
+                    <div class="vhm_review_stars_7b2x">★★★★★</div>
+                    <p class="vhm_review_text_4m6n">"Best investment I've made in my fitness and social life. The coaching quality is exceptional, and the flexible scheduling works perfectly with my work commitments. Ventivo Home is a game-changer!"</p>
+                    <p class="vhm_review_author_9k3x">- Juan Delgado</p>
+                </div>
+
+                <div class="vhm_review_card_3p8q">
+                    <div class="vhm_review_stars_7b2x">★★★★★</div>
+                    <p class="vhm_review_text_4m6n">"The tournament opportunities and competitive environment pushed me to new levels. I've won three titles this year thanks to the advanced training program. The coaches' tactical insights are invaluable."</p>
+                    <p class="vhm_review_author_9k3x">- Patricia Gonzalez</p>
+                </div>
+
+                <div class="vhm_review_card_3p8q">
+                    <div class="vhm_review_stars_7b2x">★★★★★</div>
+                    <p class="vhm_review_text_4m6n">"Fantastic experience from day one. The staff is welcoming, the courts are immaculate, and the coaching is professional. I've recommended Ventivo Home to all my friends interested in padel."</p>
+                    <p class="vhm_review_author_9k3x">- Roberto Sanchez</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Block 2 -->
+    <div class="vhm_content_section_4x2m">
+        <div class="vhm_info_block_9k2p">
+            <h3 class="vhm_info_title_6m3x">Player Development Pathways</h3>
+            <p class="vhm_info_text_4p8n">We offer structured pathways for players at every stage of their padel journey. From recreational players seeking fitness and fun to competitive athletes targeting tournament success, our programs are designed to meet your specific goals. Our development model emphasizes progressive skill building, competitive experience, and personal growth. We track player progress through regular assessments and provide detailed feedback to guide your development. Our youth academy identifies and nurtures young talent, preparing them for competitive padel careers. <span class="vhm_highlight_text_2k7m">Click here to continue</span> learning about our comprehensive player development system.</p>
+        </div>
+    </div>
+
+    <!-- Testimonial Section -->
+    <div class="vhm_testimonial_section_8x2k">
+        <div class="vhm_testimonial_content_3p9m">
+            <p class="vhm_testimonial_quote_5n7x">"Ventivo Home isn't just a padel academy; it's a community where passion for the sport thrives. The combination of expert coaching, excellent facilities, and supportive environment creates the perfect setting for growth and achievement."</p>
+            <p class="vhm_testimonial_author_2m4k">- Miguel Torres, Regional Padel Champion</p>
+        </div>
+    </div>
+
+    <!-- History Section 3 -->
+    <div class="vhm_history_section_6x2n">
+        <div class="vhm_history_content_4p7k">
+            <div>
+                <h2 class="vhm_history_title_2n4x">Current Vision & Future Growth</h2>
+                <p class="vhm_history_text_8q5m">Today, Ventivo Home continues to evolve and innovate in padel coaching and player development. We've recently upgraded our facilities with advanced video analysis systems, biomechanics assessment tools, and expanded our coaching staff to include specialists in different areas of the game. Our commitment to research-based training methods ensures our players benefit from the latest developments in sports science and padel coaching.</p>
+                <p class="vhm_history_text_8q5m">Looking forward, we're planning to expand our academy with additional courts, establish satellite locations, and develop online coaching programs to reach players beyond our geographic area. We're also investing in youth development initiatives and partnerships with schools to introduce padel to younger generations. Our vision is to become the premier padel academy in the region, known for producing excellent players and fostering a vibrant padel community.</p>
+            </div>
+            <img src="https://images.pexels.com/photos/3945679/pexels-photo-3945679.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ventivo Home Future" class="vhm_history_image_5k9p">
+        </div>
+    </div>
+
+    <!-- Info Block 3 -->
+    <div class="vhm_content_section_4x2m">
+        <div class="vhm_info_block_9k2p">
+            <h3 class="vhm_info_title_6m3x">Specialized Training Programs</h3>
+            <p class="vhm_info_text_4p8n">Beyond our standard class offerings, Ventivo Home provides specialized training programs tailored to specific needs. Our injury prevention program helps players develop strength and flexibility to avoid common padel injuries. Mental conditioning sessions prepare competitive players for high-pressure tournament situations. Video analysis sessions provide detailed feedback on technique and tactical execution. We also offer private coaching sessions for players seeking one-on-one attention and accelerated development. Each specialized program is designed by our coaching team based on current sports science research and practical experience.</p>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="vhm_cta_section_7b3m">
+        <div class="vhm_cta_text_4n6x">Ready to Transform Your Padel Game?</div>
+        <p style="font-size: 18px; margin-bottom: 20px;">Join hundreds of satisfied players who have improved their skills and found their padel community at Ventivo Home.</p>
+        <button class="vhm_cta_button_7h3m" onclick="scrollToSection('classes')">Start Your Journey Today</button>
+    </div>
+
+    <!-- Info Block 4 -->
+    <div class="vhm_content_section_4x2m">
+        <div class="vhm_info_block_9k2p">
+            <h3 class="vhm_info_title_6m3x">Community & Social Events</h3>
+            <p class="vhm_info_text_4p8n">Ventivo Home is more than just a training facility; it's a vibrant community of padel enthusiasts. We organize regular social events, team-building activities, and community tournaments that bring players together. Our annual gala celebrates player achievements and recognizes outstanding contributions to our community. We also host padel clinics featuring visiting professional players and coaches from around the world. These community initiatives create lasting friendships and a supportive environment where everyone feels welcome. <span class="vhm_highlight_text_2k7m">Click here to continue</span> exploring our community programs and social calendar.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="vhm_footer_wrapper_3m8k">
+        <div class="vhm_footer_content_7n2x">
+            <div class="vhm_footer_section_4b6x">
+                <div class="vhm_footer_title_9p3x">Contact Information</div>
+                <p style="margin-bottom: 10px;">Ventivo Home Padel Academy</p>
+                <p style="margin-bottom: 10px;">123 Sports Avenue, Athletic District</p>
+                <p style="margin-bottom: 10px;">City, State 45678</p>
+                <p style="margin-bottom: 10px;">
+                    <a href="tel:+1-555-0147" class="vhm_phone_link_6x3m">+1 (555) 0147</a>
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <a href="mailto:info@ventivohome.com" class="vhm_footer_link_2k8n">info@ventivohome.com</a>
+                </p>
+            </div>
+
+            <div class="vhm_footer_section_4b6x">
+                <div class="vhm_footer_title_9p3x">Quick Links</div>
+                <a class="vhm_footer_link_2k8n" onclick="scrollToSection('classes')">Classes</a>
+                <a class="vhm_footer_link_2k8n" onclick="scrollToSection('coaching')">Coaching</a>
+                <a class="vhm_footer_link_2k8n" onclick="scrollToSection('facilities')">Facilities</a>
+                <a class="vhm_footer_link_2k8n" onclick="scrollToSection('events')">Events</a>
+                <a class="vhm_footer_link_2k8n" onclick="scrollToSection('about')">About Us</a>
+            </div>
+
+            <div class="vhm_footer_section_4b6x">
+                <div class="vhm_footer_title_9p3x">Hours of Operation</div>
+                <p style="margin-bottom: 8px;">Monday - Friday: 6:00 AM - 10:00 PM</p>
+                <p style="margin-bottom: 8px;">Saturday: 7:00 AM - 9:00 PM</p>
+                <p style="margin-bottom: 8px;">Sunday: 8:00 AM - 8:00 PM</p>
+                <p style="margin-bottom: 8px;">Holidays: 9:00 AM - 6:00 PM</p>
+            </div>
+
+            <div class="vhm_footer_section_4b6x">
+                <div class="vhm_footer_title_9p3x">Legal</div>
+                <a class="vhm_footer_link_2k8n" onclick="openModal('terms')">Terms of Service</a>
+                <a class="vhm_footer_link_2k8n" onclick="openModal('privacy')">Privacy Policy</a>
+                <a class="vhm_footer_link_2k8n" onclick="openModal('disclaimer')">Disclaimer</a>
+                <p style="margin-top: 20px; font-size: 12px; opacity: 0.8;">© 2024 Ventivo Home. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div class="vhm_modal_overlay_5t4x" id="termsModal">
+        <div class="vhm_modal_content_9m7x">
+            <span class="vhm_modal_close_3n5x" onclick="closeModal('terms')">&times;</span>
+            <h2 class="vhm_modal_title_7k4m">Terms of Service</h2>
+            
+            <h3 class="vhm_modal_heading_4x8n">1. Acceptance of Terms</h3>
+            <p class="vhm_modal_text_2p6n">By accessing and using the Ventivo Home website and services, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">2. Use License</h3>
+            <p class="vhm_modal_text_2p6n">Permission is granted to temporarily download one copy of the materials (information or software) on Ventivo Home's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+            <ul class="vhm_modal_list_6q3x">
+                <li>Modify or copy the materials</li>
+                <li>Use the materials for any commercial purpose or for any public display</li>
+                <li>Attempt to decompile or reverse engineer any software contained on the website</li>
+                <li>Remove any copyright or other proprietary notations from the materials</li>
+                <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
+            </ul>
+
+            <h3 class="vhm_modal_heading_4x8n">3. Disclaimer</h3>
+            <p class="vhm_modal_text_2p6n">The materials on Ventivo Home's website are provided on an 'as is' basis. Ventivo Home makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">4. Limitations</h3>
+            <p class="vhm_modal_text_2p6n">In no event shall Ventivo Home or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Ventivo Home's website.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">5. Accuracy of Materials</h3>
+            <p class="vhm_modal_text_2p6n">The materials appearing on Ventivo Home's website could include technical, typographical, or photographic errors. Ventivo Home does not warrant that any of the materials on its website are accurate, complete, or current. Ventivo Home may make changes to the materials contained on its website at any time without notice.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">6. Links</h3>
+            <p class="vhm_modal_text_2p6n">Ventivo Home has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Ventivo Home of the site. Use of any such linked website is at the user's own risk.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">7. Modifications</h3>
+            <p class="vhm_modal_text_2p6n">Ventivo Home may revise these terms of service for its website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">8. Governing Law</h3>
+            <p class="vhm_modal_text_2p6n">These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction where Ventivo Home operates, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div class="vhm_modal_overlay_5t4x" id="privacyModal">
+        <div class="vhm_modal_content_9m7x">
+            <span class="vhm_modal_close_3n5x" onclick="closeModal('privacy')">&times;</span>
+            <h2 class="vhm_modal_title_7k4m">Privacy Policy</h2>
+            
+            <h3 class="vhm_modal_heading_4x8n">1. Introduction</h3>
+            <p class="vhm_modal_text_2p6n">Ventivo Home ("we" or "us" or "our") operates the website. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our website and the choices you have associated with that data.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">2. Information Collection and Use</h3>
+            <p class="vhm_modal_text_2p6n">We collect several different types of information for various purposes to provide and improve our service to you.</p>
+            <ul class="vhm_modal_list_6q3x">
+                <li><strong>Personal Data:</strong> While using our website, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). This may include, but is not limited to: Email address, First name and last name, Phone number, Address, State, Province, ZIP/Postal code, City, Cookies and Usage Data</li>
+                <li><strong>Usage Data:</strong> We may also collect information on how the website is accessed and used ("Usage Data"). This may include information such as your computer's Internet Protocol address, browser type, browser version, the pages you visit, the time and date of your visit, and other diagnostic data.</li>
+            </ul>
+
+            <h3 class="vhm_modal_heading_4x8n">3. Use of Data</h3>
+            <p class="vhm_modal_text_2p6n">Ventivo Home uses the collected data for various purposes:</p>
+            <ul class="vhm_modal_list_6q3x">
+                <li>To provide and maintain our website</li>
+                <li>To notify you about changes to our website</li>
+                <li>To allow you to participate in interactive features of our website when you choose to do so</li>
+                <li>To provide customer support</li>
+                <li>To gather analysis or valuable information so that we can improve our website</li>
+                <li>To monitor the usage of our website</li>
+                <li>To detect, prevent and address technical issues</li>
+            </ul>
+
+            <h3 class="vhm_modal_heading_4x8n">4. Security of Data</h3>
+            <p class="vhm_modal_text_2p6n">The security of your data is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">5. Changes to This Privacy Policy</h3>
+            <p class="vhm_modal_text_2p6n">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "effective date" at the top of this Privacy Policy.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">6. Contact Us</h3>
+            <p class="vhm_modal_text_2p6n">If you have any questions about this Privacy Policy, please contact us at info@ventivohome.com or call us at +1 (555) 0147.</p>
+        </div>
+    </div>
+
+    <!-- Disclaimer Modal -->
+    <div class="vhm_modal_overlay_5t4x" id="disclaimerModal">
+        <div class="vhm_modal_content_9m7x">
+            <span class="vhm_modal_close_3n5x" onclick="closeModal('disclaimer')">&times;</span>
+            <h2 class="vhm_modal_title_7k4m">Disclaimer</h2>
+            
+            <h3 class="vhm_modal_heading_4x8n">1. General Disclaimer</h3>
+            <p class="vhm_modal_text_2p6n">The information provided on the Ventivo Home website is for general informational purposes only. While we strive to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">2. Health and Safety Disclaimer</h3>
+            <p class="vhm_modal_text_2p6n">Padel tennis is a physical activity that carries inherent risks of injury. Participants should consult with a healthcare provider before beginning any new exercise program. Ventivo Home is not responsible for any injuries or health issues that may arise from participation in our classes or training programs. All participants assume full responsibility for their health and safety.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">3. Limitation of Liability</h3>
+            <p class="vhm_modal_text_2p6n">In no event shall Ventivo Home, its directors, employees, or agents be liable to you for any direct, indirect, incidental, special, punitive, or consequential damages whatsoever resulting from any (i) errors, mistakes, or inaccuracies of content, (ii) personal injury or property damage, of any nature whatsoever, resulting from your access to and use of our website, or (iii) any unauthorized access to or use of our secure servers and/or any and all personal information stored therein.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">4. External Links Disclaimer</h3>
+            <p class="vhm_modal_text_2p6n">Our website may contain links to external websites. We are not responsible for the content, accuracy, or practices of these external sites. Your use of external websites is at your own risk and subject to the terms and conditions of those websites.</p>
+
+            <h3 class="vhm_modal_heading_4x8n">5. No Professional Advice</h3>
+            <p class="vhm_modal_text_2p6n">The content on our website is not intended to provide professional medical, legal, or financial advice. Always consult with qualified professionals before making any decisions based on information from our website.</p>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function openModal(modalType) {
+            const modalId = modalType + 'Modal';
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('vhm_active_8k2p');
+            }
+        }
+
+        function closeModal(modalType) {
+            const modalId = modalType + 'Modal';
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('vhm_active_8k2p');
+            }
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('vhm_modal_overlay_5t4x')) {
+                event.target.classList.remove('vhm_active_8k2p');
+            }
+        }
+    </script>
+	
+	<a href="/" alt="stats counter free" target="_blank" >
+<img  src="https://sstatic1.histats.com/0.gif?4977134&101" alt="stats counter free" border="0">
+	
+</body>
+</html>
